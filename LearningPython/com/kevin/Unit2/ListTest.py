@@ -68,6 +68,27 @@ print(car_List)
 
 # index() 求某个元素的索引位置 参数是可选的
 
-print(car_List.index('honda',0,4))
+# print(car_List.index('honda',0,4))# myList = [ value**2 for val in range(1,100,2)]
 
 # count() 计算机某个元素在列表中出现的元素
+print(car_List.count('honda'))
+
+# 复试列表的方式
+# 方式一：for 循环
+# 方式二：
+copy_carList = car_List[:];
+print(copy_carList)
+# 修改car_List中的元素
+car_List[0] = 'wowo'
+print(car_List)
+print(copy_carList)
+# 方式三：列表直接赋值
+print("$"*50)
+ref_carList = car_List
+print(ref_carList)
+print(car_List)
+# 修改car_List
+car_List[1] = '吉利'
+print(ref_carList)
+print(car_List)
+# 两个指向一个列表
