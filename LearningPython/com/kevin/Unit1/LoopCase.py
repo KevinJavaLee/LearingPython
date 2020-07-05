@@ -5,6 +5,10 @@
 @Software: PyCharm
 """
 import  math
+from time import *
+
+# 时间函数得出程序开始执行的时间
+start = time()
 # 练习1：
 #     打印99乘法表
 #     1*1=1
@@ -24,9 +28,10 @@ while row <= 9:
 
 print("="*50)
 
+
 # 求100以内所有的质数
 num = 2 #从2开始判断该数是否是质数
-while num < 100 :
+while num < 1000 :
     index = 2 # 作除数
     isFlag = True
     while index <= math.sqrt(num) :
@@ -39,3 +44,7 @@ while num < 100 :
     if isFlag :
         print(num)
     num += 1
+# 得到程序结束的时间点
+end = time()
+
+print(end - start)
