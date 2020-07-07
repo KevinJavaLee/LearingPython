@@ -97,6 +97,30 @@ lamSequence = filter(lambda i:i > 5 and i % 2==0 ,myList)
 for l in lamSequence:
     print(l)
 
+# map()对象 可以对可迭代对象中的所有元素做指定的操作，然后将其添加到一个新的对象中
+l = [1,5,67,66,89,14]
+
+print("#"*50)
+#
+maps = map(lambda i:i**3,l)
+# 遍历对象
+for m in maps:
+    print(m)
+
+# sort() sorted()
+# sort()该方法用来对列表进行排序
+sortList = [9,3,5.4,6]
+sortList.sort()
+print(sortList)
+# 对字符串进行排序
+strList = ['12','kevin','xiaoyu','robert','alice','a']
+strList.sort()
+print(strList)
+# key需要接收一个函数作为参数
+strList.sort(key=len)
+print(strList)
+# sorted() 排序后不会对列表产生影响
+
 
 
 
